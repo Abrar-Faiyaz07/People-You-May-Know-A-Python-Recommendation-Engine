@@ -70,20 +70,22 @@ Recommend pages liked by other users who share similar interests.
 Pages are ranked based on the number of shared likes between users.
 
 Project Structure
+<pre>
 people-you-may-know/
 │
 ├── data/
-│   ├── codebook_data.json/
-│   ├── cleaned_codebook_data.json/
+│   ├── codebook_data.json
+│   ├── cleaned_codebook_data.json
 │
 ├── src/
-│   ├── load_data.py/
-│   ├── clean_data.py/
-│   ├── people_you_may_know.py/
-│   ├── pages_you_might_like.py/
+│   ├── load_data.py
+│   ├── clean_data.py
+│   ├── people_you_may_know.py
+│   ├── pages_you_might_like.py
 │
-├── README.md/
-└── requirements.txt/
+├── README.md
+└── requirements.txt
+</pre>
 
 
 Note: No external dependencies required.
