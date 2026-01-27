@@ -1,31 +1,34 @@
-📘 People You May Know – A Python Recommendation Engine (Pure Python)
-📌 Project Overview
+People You May Know – A Python Recommendation Engine
+Project Overview
 
-People You May Know is a mini social network analytics project built using pure Python (no Pandas, NumPy, or external libraries).
-The project simulates how real-world platforms like Facebook or LinkedIn recommend new friends and pages by analyzing user connections and interests.
+People You May Know is a mini social network analysis project built entirely with pure Python. It simulates how social platforms like Facebook or LinkedIn suggest new friends and pages by analyzing user connections and interests using basic logic and algorithms.
 
 This project demonstrates:
 
 Data loading and cleaning
 
-Graph-like relationship analysis
+Analysis of user relationships
 
-Recommendation systems using basic algorithms
+Recommendation logic based on mutual connections and shared interests
 
-Strong command over Python fundamentals
+Solid understanding of Python fundamentals
 
-🎯 Features Implemented
+Features Implemented
 
-✔ Load and explore social network data from JSON
-✔ Clean messy and inconsistent data
-✔ Recommend People You May Know using mutual friends
-✔ Recommend Pages You Might Like using collaborative filtering
-✔ Built entirely with core Python
+✅ Load and explore social network data from JSON
 
-🧠 Project Logic (High Level)
-1️⃣ Data Loading
+✅ Clean messy and inconsistent data
 
-JSON file contains:
+✅ Recommend people based on mutual friends
+
+✅ Recommend pages based on shared interests
+
+✅ Built entirely with core Python, no external libraries
+
+Project Logic (High Level)
+Data Loading
+
+The JSON file contains:
 
 Users (id, name, friends, liked pages)
 
@@ -33,7 +36,7 @@ Pages (id, name)
 
 Data is loaded using Python’s built-in json module.
 
-2️⃣ Data Cleaning
+Data Cleaning
 
 The cleaning process handles:
 
@@ -47,92 +50,86 @@ Duplicate page IDs
 
 This ensures reliable and structured data for analysis.
 
-3️⃣ People You May Know
+People You May Know
 
 Logic:
 
-If two users are not friends but share mutual friends, they are recommended.
+Recommend users who are not yet friends but share mutual friends.
 
 More mutual friends = higher recommendation priority.
 
-📌 Example:
+Example:
 If Amit and Sara share Priya as a mutual friend, Sara is recommended to Amit.
 
-4️⃣ Pages You Might Like
+Pages You Might Like
 
-Logic (Collaborative Filtering):
+Logic:
 
-If two users like the same pages, they may like other pages liked by each other.
+Recommend pages liked by other users who share similar interests.
 
-Pages liked by similar users are recommended.
+Pages are ranked based on the number of shared likes between users.
 
-Ranking is based on the number of shared interests.
-
-🗂 Project Structure
+Project Structure
 people-you-may-know/
 │
 ├── data/
-│   ├── codebook_data.json
-│   ├── cleaned_codebook_data.json
+│   ├── codebook_data.json/
+│   ├── cleaned_codebook_data.json/
 │
 ├── src/
-│   ├── load_data.py
-│   ├── clean_data.py
-│   ├── people_you_may_know.py
-│   ├── pages_you_might_like.py
+│   ├── load_data.py/
+│   ├── clean_data.py/
+│   ├── people_you_may_know.py/
+│   ├── pages_you_might_like.py/
 │
-├── README.md
-└── requirements.txt
+├── README.md/
+└── requirements.txt/
 
 
-(No external dependencies required)
+Note: No external dependencies required.
 
-▶️ How to Run
+How to Run
 
 Clone the repository:
 
-git clone https://github.com/your-username/people-you-may-know.git
+git clone https://github.com/Abrar-Faiyaz07/People-You-May-Know-A-Python-Recommendation-Engine.git
 
 
 Run any module using Python:
 
 python src/people_you_may_know.py
 
-🛠 Technologies Used
+Technologies Used
 
 Python 3
 
 JSON (built-in module only)
 
-🚫 No Pandas
-🚫 No NumPy
-🚫 No external libraries
+No external libraries like Pandas or NumPy are required.
 
-📈 Learning Outcomes
+Learning Outcomes
 
-Through this project, I strengthened my understanding of:
-
-Python data structures (lists, sets, dictionaries)
+Strong grasp of Python data structures (lists, sets, dictionaries)
 
 File handling & JSON parsing
 
 Algorithmic thinking
 
-Recommendation system fundamentals
+Implementing recommendation logic without AI/ML
 
 Writing clean, modular Python code
 
-🚀 Future Improvements
+Future Improvements
 
 Convert logic into REST APIs
 
-Add weighted recommendations
+Add weighted recommendations based on friend counts
 
 Integrate database support
 
-Build a simple frontend visualization
+Build a simple frontend for visualization
 
-👤 Author
+Author
 
 Faiyaz
 Computer Science & Engineering Student
