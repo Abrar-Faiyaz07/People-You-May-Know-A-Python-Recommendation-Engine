@@ -82,23 +82,22 @@ If Amit and Sara both share Priya as a mutual friend, Sara may be recommended to
 ## Project Structure
 
 ```
-
 people-you-may-know/
 │
 ├── data/
-│ ├── codebook_data.json
-│ ├── cleaned_codebook_data.json
+│   ├── codebook_data.json
+│   ├── cleaned_codebook_data.json
 │
 ├── src/
-│ ├── load_data.py
-│ ├── clean_data.py
-│ ├── people_you_may_know.py
-│ ├── pages_you_might_like.py
+│   ├── load_data.py
+│   ├── clean_data.py
+│   ├── people_you_may_know.py
+│   ├── pages_you_might_like.py
 │
 ├── README.md
 └── requirements.txt
+```
 
-````
 
 Note: No external dependencies are required.
 
