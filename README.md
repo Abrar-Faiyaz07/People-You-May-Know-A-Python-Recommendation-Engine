@@ -157,9 +157,9 @@ No third-party libraries such as Pandas or NumPy are used.
 
 ## Author
 
-Faiyaz
-Computer Science & Engineering Student
-Aspiring Software Engineer / Data Scientist
+Abrar Faiyaz <br>
+Computer Science & Engineering Student<br>
+Aspiring Software Engineer / Data Scientist<br>
 
 ```
 ```
