@@ -1,4 +1,3 @@
-```markdown
 # People You May Know – A Python Recommendation Engine
 
 ## Project Overview
@@ -38,7 +37,7 @@ The dataset is stored in JSON format and contains:
 - Users (`id`, `name`, `friends`, `liked_pages`)
 - Pages (`id`, `name`)
 
-Data is loaded using Python’s built-in `json` module.
+Data is loaded using Python's built-in `json` module.
 
 ---
 
@@ -98,8 +97,7 @@ people-you-may-know/
 └── requirements.txt
 ```
 
-
-Note: No external dependencies are required.
+> Note: No external dependencies are required.
 
 ---
 
@@ -109,7 +107,7 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/Abrar-Faiyaz07/People-You-May-Know-A-Python-Recommendation-Engine.git
-````
+```
 
 Navigate to the project directory:
 
@@ -127,8 +125,8 @@ python src/people_you_may_know.py
 
 ## Technologies Used
 
-* Python 3
-* JSON (built-in module only)
+- Python 3
+- JSON (built-in module only)
 
 No third-party libraries such as Pandas or NumPy are used.
 
@@ -136,29 +134,26 @@ No third-party libraries such as Pandas or NumPy are used.
 
 ## Learning Outcomes
 
-* Strong understanding of Python data structures (lists, sets, dictionaries)
-* File handling and JSON parsing
-* Algorithmic problem-solving
-* Designing recommendation logic without machine learning libraries
-* Writing modular, maintainable Python code
+- Strong understanding of Python data structures (lists, sets, dictionaries)
+- File handling and JSON parsing
+- Algorithmic problem-solving
+- Designing recommendation logic without machine learning libraries
+- Writing modular, maintainable Python code
 
 ---
 
 ## Future Improvements
 
-* Introduce weighted scoring for recommendations
-* Add database integration
-* Expose functionality via REST APIs
-* Build a simple frontend for visualization
-* Implement ranking optimization strategies
+- Introduce weighted scoring for recommendations
+- Add database integration
+- Expose functionality via REST APIs
+- Build a simple frontend for visualization
+- Implement ranking optimization strategies
 
 ---
 
 ## Author
 
-Abrar Faiyaz <br>
-Computer Science & Engineering Student<br>
-Aspiring Software Engineer / Data Scientist<br>
-
-```
-```
+Abrar Faiyaz  
+Computer Science & Engineering Student  
+Aspiring Software Engineer / Data Scientist
