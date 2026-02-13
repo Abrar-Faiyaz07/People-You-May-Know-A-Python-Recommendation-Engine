@@ -83,20 +83,20 @@ If Amit and Sara both share Priya as a mutual friend, Sara may be recommended to
 
 ```
 
-people-you-may-know/
+people-you-may-know/<br>
 │
-├── data/
-│   ├── codebook_data.json
-│   ├── cleaned_codebook_data.json
+├── data/<br>
+│   ├── codebook_data.json<br>
+│   ├── cleaned_codebook_data.json<br>
 │
-├── src/
-│   ├── load_data.py
-│   ├── clean_data.py
-│   ├── people_you_may_know.py
-│   ├── pages_you_might_like.py
+├── src/<br>
+│   ├── load_data.py<br>
+│   ├── clean_data.py<br>
+│   ├── people_you_may_know.py<br>
+│   ├── pages_you_might_like.py<br>
 │
-├── README.md
-└── requirements.txt
+├── README.md<br>
+└── requirements.txt<br>
 
 ````
 
