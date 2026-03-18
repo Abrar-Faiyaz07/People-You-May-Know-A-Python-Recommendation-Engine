@@ -1,0 +1,12 @@
+ Upload them in this order:
+
+  1. [src/main.cpp](D:\SaminWorks\OOP from claude\src\main.cpp)
+  2. [include/Book.h](D:\SaminWorks\OOP from claude\include\Book.h)
+  3. [src/Book.cpp](D:\SaminWorks\OOP from claude\src\Book.cpp)
+  5. [src/User.cpp](D:\SaminWorks\OOP from claude\src\User.cpp)
+  6. [include/Rating.h](D:\SaminWorks\OOP from claude\include\Rating.h)
+  7. [src/Rating.cpp](D:\SaminWorks\OOP from claude\src\Rating.cpp)
+  8. [include/IRecommendationStrategy.h](D:\SaminWorks\OOP from claude\include\IRecommendationStrategy.h)
+  11. [include/ContentBasedStrategy.h](D:\SaminWorks\OOP from claude\include\ContentBasedStrategy.h)
+  12. [src/ContentBasedStrategy.cpp](D:\SaminWorks\OOP from claude\src\ContentBasedStrategy.cpp)
+  13. [include/CollaborativeStrategy.h](D:\SaminWorks\OOP from claude\include\CollaborativeStrategy.h)

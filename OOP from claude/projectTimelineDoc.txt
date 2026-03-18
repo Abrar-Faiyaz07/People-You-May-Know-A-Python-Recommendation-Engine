@@ -1,0 +1,138 @@
+Project Timeline Document
+Project: Book Recommendation System
+Team: The Semi-Colons
+Development Type: Built from scratch
+Project Duration: 10 working days
+Timeline Range: March 10, 2026 - March 21, 2026
+
+Day 1 - March 10, 2026
+- Finalized project idea and scope
+- Discussed academic requirements and OOP goals
+- Identified core modules: Book, User, Rating, Repository, Recommendation Engine
+- Planned file-based database approach
+- Contributors:
+  Abrar Faiyaz - recommendation system planning and main execution flow planning
+  Ashique - entity model and data storage planning
+  Nuhiat - search, filter, and user interaction planning
+
+Day 2 - March 11, 2026
+- Designed initial class structure
+- Created entity class plans for Book, User, and Rating
+- Planned repository layer for loading and saving data
+- Defined basic file and folder structure
+- Contributors:
+  Ashique - include/Book.h, src/Book.cpp, include/User.h, src/User.cpp, include/Rating.h, src/Rating.cpp
+  Abrar Faiyaz - src/main.cpp, include/RecommendationEngine.h design planning
+
+Day 3 - March 12, 2026
+- Implemented Book, User, and Rating classes
+- Added constructors, getters, setters, and validation logic
+- Established encapsulation in entity classes
+- Contributors:
+  Ashique - include/Book.h, src/Book.cpp, include/User.h, src/User.cpp, include/Rating.h, src/Rating.cpp
+
+Day 4 - March 13, 2026
+- Implemented CSV parsing and file handling support
+- Built repository classes for books, users, and ratings
+- Connected data loading and saving workflow
+- Contributors:
+  Ashique - include/CSVParser.h, src/CSVParser.cpp, include/Repository.h, src/Repository.cpp, include/BookRepository.h, src/BookRepository.cpp, include/UserRepository.h, src/UserRepository.cpp, include/RatingRepository.h, src/RatingRepository.cpp
+  Ashique - data/books.csv, data/users.csv, data/ratings.csv
+
+Day 5 - March 14, 2026
+- Implemented search and filtering features
+- Added keyword search and genre-based filtering
+- Started integrating user preference handling
+- Contributors:
+  Nuhiat - include/SearchService.h, src/SearchService.cpp, include/BookFilter.h
+
+Day 6 - March 15, 2026
+- Designed recommendation architecture from scratch
+- Added abstract recommendation strategy interface
+- Planned final hybrid recommendation flow with extensible strategy-based design
+- Contributors:
+  Abrar Faiyaz - include/IRecommendationStrategy.h, include/RecommendationEngine.h
+
+Day 7 - March 16, 2026
+- Implemented recommendation engine
+- Added content-based, collaborative, and hybrid recommendation strategy files
+- Connected strategy execution with user and rating data
+- Contributors:
+  Abrar Faiyaz - src/RecommendationEngine.cpp, include/HybridStrategy.h, src/HybridStrategy.cpp, include/ContentBasedStrategy.h, src/ContentBasedStrategy.cpp, include/CollaborativeStrategy.h, src/CollaborativeStrategy.cpp
+
+Day 8 - March 17, 2026
+- Implemented menu flow and user interaction system
+- Added user registration, login, preference update, and rating options
+- Connected all modules into one runnable system
+- Contributors:
+  Abrar Faiyaz - src/main.cpp, src/MenuController.cpp
+  Nuhiat - include/SearchService.h, src/SearchService.cpp integration support
+
+Day 9 - March 18, 2026
+- Added explicit OOP improvements for presentation quality
+- Ensured inheritance, abstraction, polymorphism, operator overloading, templates, and exception handling were clearly present in code
+- Improved console formatting and organized final contribution files
+- Contributors:
+  Abrar Faiyaz - include/AppExceptions.h, src/MenuController.cpp, include/IRecommendationStrategy.h, include/RecommendationEngine.h, src/RecommendationEngine.cpp
+  Nuhiat - include/BookFilter.h
+  Ashique - src/Book.cpp, src/CSVParser.cpp support for validation and exception-ready integration
+
+Day 10 - March 21, 2026
+- Final testing and cleanup
+- Updated README and push-ready project structure
+- Prepared task distribution and planning support files
+- Prepared the project for GitHub push and final presentation
+- Contributors:
+  Abrar Faiyaz - recommendation-side final review and integration review
+  Ashique - data and repository consistency review
+  Nuhiat - search/filter and presentation support review
+
+Contributor File Summary
+
+Abrar Faiyaz
+- src/main.cpp
+- include/Book.h
+- src/Book.cpp
+- include/User.h
+- src/User.cpp
+- include/Rating.h
+- src/Rating.cpp
+- include/IRecommendationStrategy.h
+- include/RecommendationEngine.h
+- src/RecommendationEngine.cpp
+- include/HybridStrategy.h
+- src/HybridStrategy.cpp
+- include/ContentBasedStrategy.h
+- src/ContentBasedStrategy.cpp
+- include/CollaborativeStrategy.h
+- src/CollaborativeStrategy.cpp
+- src/MenuController.cpp
+- include/AppExceptions.h
+
+Ashique
+
+- include/CSVParser.h
+- src/CSVParser.cpp
+- include/Repository.h
+- src/Repository.cpp
+- include/BookRepository.h
+- src/BookRepository.cpp
+- include/UserRepository.h
+- src/UserRepository.cpp
+- include/RatingRepository.h
+- src/RatingRepository.cpp
+- data/books.csv
+- data/users.csv
+- data/ratings.csv
+
+Nuhiat
+- include/SearchService.h
+- src/SearchService.cpp
+- include/BookFilter.h
+
+Final Outcome
+- A complete Book Recommendation System in C++
+- Built from scratch using OOP principles
+- Uses file-based data storage
+- Includes search, filtering, recommendation, and rating functionality
+- Prepared for academic presentation and demonstration

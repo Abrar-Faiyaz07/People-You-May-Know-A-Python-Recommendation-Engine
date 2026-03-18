@@ -1,0 +1,54 @@
+Task Distribution (Push Files Only)
+Project: D:\SaminWorks\OOP from claude
+
+Shared Push Files
+- Makefile
+- run.bat
+- README.md
+- data/books.csv
+- data/users.csv
+- data/ratings.csv
+
+Abrar Faiyaz
+- src/main.cpp
+- include/IRecommendationStrategy.h
+- include/RecommendationEngine.h
+- src/RecommendationEngine.cpp
+- include/HybridStrategy.h
+- src/HybridStrategy.cpp
+- include/ContentBasedStrategy.h
+- src/ContentBasedStrategy.cpp
+- include/CollaborativeStrategy.h
+- src/CollaborativeStrategy.cpp
+- src/MenuController.cpp
+- include/AppExceptions.h
+
+Ashique
+- include/Book.h
+- src/Book.cpp
+- include/User.h
+- src/User.cpp
+- include/Rating.h
+- src/Rating.cpp
+- include/CSVParser.h
+- src/CSVParser.cpp
+- include/Repository.h
+- src/Repository.cpp
+- include/BookRepository.h
+- src/BookRepository.cpp
+- include/UserRepository.h
+- src/UserRepository.cpp
+- include/RatingRepository.h
+- src/RatingRepository.cpp
+- data/books.csv
+- data/users.csv
+- data/ratings.csv
+
+Nuhiat
+- include/SearchService.h
+- src/SearchService.cpp
+- include/BookFilter.h
+
+Notes
+- This file includes only the files intended for GitHub push.
+- Helper and preparation files are excluded.

@@ -1,0 +1,37 @@
+1_src/main.cpp_Abrar Faiyaz
+2_include/IRecommendationStrategy.h_Abrar Faiyaz
+3_include/RecommendationEngine.h_Abrar Faiyaz
+4_src/RecommendationEngine.cpp_Abrar Faiyaz
+5_include/HybridStrategy.h_Abrar Faiyaz
+6_src/HybridStrategy.cpp_Abrar Faiyaz
+7_include/ContentBasedStrategy.h_Abrar Faiyaz
+8_src/ContentBasedStrategy.cpp_Abrar Faiyaz
+9_include/CollaborativeStrategy.h_Abrar Faiyaz
+10_src/CollaborativeStrategy.cpp_Abrar Faiyaz
+11_src/MenuController.cpp_Abrar Faiyaz
+12_include/AppExceptions.h_Abrar Faiyaz
+13_include/Book.h_Ashique
+14_src/Book.cpp_Ashique
+15_include/User.h_Ashique
+16_src/User.cpp_Ashique
+17_include/Rating.h_Ashique
+18_src/Rating.cpp_Ashique
+19_include/CSVParser.h_Ashique
+20_src/CSVParser.cpp_Ashique
+21_include/Repository.h_Ashique
+22_src/Repository.cpp_Ashique
+23_include/BookRepository.h_Ashique
+24_src/BookRepository.cpp_Ashique
+25_include/UserRepository.h_Ashique
+26_src/UserRepository.cpp_Ashique
+27_include/RatingRepository.h_Ashique
+28_src/RatingRepository.cpp_Ashique
+29_data/books.csv_Ashique
+30_data/users.csv_Ashique
+31_data/ratings.csv_Ashique
+32_include/SearchService.h_Nuhiat
+33_src/SearchService.cpp_Nuhiat
+34_include/BookFilter.h_Nuhiat
+35_Makefile_Shared
+36_run.bat_Shared
+37_README.md_Shared

@@ -1,0 +1,105 @@
+{\rtf1\ansi\deff0
+{\fonttbl{\f0 Calibri;}}
+\fs24
+\b Book Recommendation System - Q/A Preparation\b0\par
+\par
+\b 1. Project Overview\b0\par
+This project is a C++ OOP-based book recommendation system designed as a complete software project from scratch. It loads books, users, and ratings from CSV files, supports search and filtering, allows users to update preferences and rate books, and generates recommendations using a final hybrid recommendation logic.\par
+\par
+\b 2. Key Features\b0\par
+1. Book browsing and search by title or author.\par
+2. Genre and rating based filtering.\par
+3. User registration, authentication, and preference management.\par
+4. Book rating with rating updates reflected in book statistics.\par
+5. Recommendation engine using one final hybrid recommendation flow.\par
+\par
+\b 3. Individual Contribution - Abrar Faiyaz\b0\par
+Abrar Faiyaz implemented the core recommendation side of the project.\par
+\par
+\b Files to mention in order:\b0\par
+1. src/main.cpp\par
+2. include/IRecommendationStrategy.h\par
+3. include/RecommendationEngine.h\par
+4. src/RecommendationEngine.cpp\par
+5. include/HybridStrategy.h\par
+6. src/HybridStrategy.cpp\par
+7. include/ContentBasedStrategy.h\par
+8. src/ContentBasedStrategy.cpp\par
+9. include/CollaborativeStrategy.h\par
+10. src/CollaborativeStrategy.cpp\par
+\par
+\b Short speaking version:\b0\par
+My contribution was the recommendation architecture and recommendation implementation. I worked on the system entry flow, the recommendation engine design, the abstract recommendation interface, and the actual recommendation strategies. The final running system uses a hybrid recommendation logic, but the design still demonstrates abstraction, inheritance, and polymorphism through strategy-based implementation.\par
+\par
+\b 4. OOP Concepts Used In Code\b0\par
+\b Encapsulation:\b0\par
+Book, User, Rating, and repository classes keep data private and expose controlled getters and setters.\par
+\par
+\b STL set Usage:\b0\par
+User stores preferred genres, preferred authors, and read books using set containers so duplicate entries are prevented automatically and the output stays ordered.\par
+\par
+\b Abstraction:\b0\par
+IRecommendationStrategy and BookFilter define abstract behavior without exposing implementation details.\par
+\par
+\b Inheritance:\b0\par
+ContentBasedStrategy, CollaborativeStrategy, and HybridStrategy inherit from IRecommendationStrategy. GenreFilter, MinYearFilter, and MinRatingFilter inherit from BookFilter. DataAccessException and ValidationException inherit from ProjectException.\par
+\par
+\b Polymorphism / Virtual Function:\b0\par
+RecommendationEngine stores an IRecommendationStrategy pointer and calls recommend() and name() dynamically at runtime. FilterChain stores BookFilter objects and calls matches() through the base interface.\par
+\par
+\b Operator Overloading:\b0\par
+Book overloads operator<, operator==, and operator<< for comparison and formatted output.\par
+\par
+\b Templates:\b0\par
+SearchService::sortBooks uses a template comparator. FilterChain::addFilter also uses a template so different filter types can be created safely with one reusable function.\par
+\par
+\b Exception Handling:\b0\par
+CSVParser throws DataAccessException for file problems. Book throws ValidationException for invalid ratings. MenuController catches ProjectException and shows a friendly runtime message.\par
+\par
+\b Beautification / Formatted Output:\b0\par
+The menu uses iomanip functions such as setw and setprecision to print aligned book tables during demonstration.\par
+\par
+\b 5. Likely Viva Questions And Answers\b0\par
+\b Q: Why did you use an abstract class for recommendation?\b0\par
+A: We wanted the engine to support multiple algorithms without changing the engine itself. The abstract interface makes the system extensible and supports runtime polymorphism.\par
+\par
+\b Q: If the final system uses one logic, why keep multiple strategy classes?\b0\par
+A: The final product uses hybrid recommendation only, but the design still keeps the architecture extensible. This shows abstraction, inheritance, and polymorphism clearly in code.\par
+\par
+\b Q: Where is polymorphism used?\b0\par
+A: In RecommendationEngine, the active strategy is stored as an IRecommendationStrategy pointer. The engine calls recommend() through the base interface, and the HybridStrategy object handles the actual implementation at runtime.\par
+\par
+\b Q: Where is inheritance used?\b0\par
+A: The strategy classes inherit from IRecommendationStrategy, filter classes inherit from BookFilter, and custom exception classes inherit from ProjectException.\par
+\par
+\b Q: Why did you use templates?\b0\par
+A: Templates let us write reusable, type-safe logic. sortBooks works with any comparator, and addFilter can construct any filter type without duplicating code.\par
+\par
+\b Q: How is exception handling useful here?\b0\par
+A: It separates normal logic from error handling. File and validation errors are thrown at the source and handled centrally in the menu layer.\par
+\par
+\b Q: How can Abrar explain his contribution clearly?\b0\par
+A: Abrar should explain the flow from main.cpp to RecommendationEngine, then explain the strategy interface, then explain how the final HybridStrategy produces recommendations using recommendation data.\par
+\par
+\b 6. System Design Talking Points\b0\par
+1. Repository layer separates data access from business logic.\par
+2. RecommendationEngine coordinates recommendation execution but does not hardcode all algorithm details in one place.\par
+3. SearchService handles searching, sorting, and filtering.\par
+4. Entity classes such as Book and User encapsulate domain rules.\par
+5. MenuController manages user interaction and exception-safe execution flow.\par
+\par
+\b 7. What We Could Have Improved But Failed To Finish\b0\par
+1. Stronger password security using hashing instead of plain-text storage.\par
+2. Better persistence with a database instead of CSV files.\par
+3. Unit tests for recommendation scoring and repository validation.\par
+4. Smarter recommendation evaluation metrics and feedback tracking.\par
+5. Better UI, including pagination and richer book details.\par
+6. More advanced personalization and feedback learning from user behavior.\par
+\par
+\b 8. Demo Advice For Abrar Faiyaz\b0\par
+1. Start from main.cpp and explain startup flow briefly.\par
+2. Then show RecommendationEngine.h and RecommendationEngine.cpp.\par
+3. After that show IRecommendationStrategy.h to explain abstraction and polymorphism.\par
+4. Then show HybridStrategy as the final implemented recommendation logic.\par
+5. If asked about OOP, mention abstract class, inheritance, polymorphism, templates, operator overloading, exception handling, set, and formatted output with concrete file names.\par
+}
